@@ -1,3 +1,5 @@
+// Class-based testbench coordinator. It selects transaction configuration,
+// constructs the environment, and launches generator/driver/checker activity.
 `ifndef _tb_
 `define _tb_
 

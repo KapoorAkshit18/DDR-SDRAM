@@ -1,4 +1,7 @@
-module ddr_sdram( 
+// Top-level DDR SDRAM controller wrapper. It generates internal clocks,
+// decodes host commands, drives SDRAM command pins, and moves data through
+// four parallel data-path slices. Included blocks form this RTL compile unit.
+module ddr_sdram(
         CLK, 
         RESET_N, 
         ADDR, 

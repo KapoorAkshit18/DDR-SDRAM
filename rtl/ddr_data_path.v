@@ -1,4 +1,6 @@
-module ddr_data_path( 
+// One data-lane slice of the DDR controller. Four instances are composed by
+// ddr_sdram to cover the 128-bit host data bus and associated strobes/masks.
+module ddr_data_path(
         CLK100, 
         CLK200, 
         RESET_N, 

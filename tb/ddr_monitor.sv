@@ -1,3 +1,5 @@
+// Passive monitor that samples interface activity and forwards observed
+// transactions to the checker and coverage collector.
 `ifndef _moni_
 `define _moni_
 

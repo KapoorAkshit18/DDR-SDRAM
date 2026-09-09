@@ -1,4 +1,6 @@
- module ddr_control_interface( 
+// Host-side command controller. It accepts a request, applies configured DDR
+// timing limits, and produces one operation request for ddr_command.
+module ddr_control_interface(
         CLK, 
         RESET_N, 
         CMD, 

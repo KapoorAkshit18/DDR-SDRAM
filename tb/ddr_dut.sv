@@ -1,3 +1,5 @@
+// DUT adapter between the verification interface and the RTL controller.
+// Keeping this wrapper separate makes the top-level testbench connection clear.
 `ifndef _dut_
 `define _dut_
 

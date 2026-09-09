@@ -1,3 +1,5 @@
+// Common transaction state and signal-width definitions shared by the
+// generator, driver, monitor, scoreboard, and coverage model.
 `ifndef _base_
 `define _base_
 

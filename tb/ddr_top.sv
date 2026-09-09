@@ -1,3 +1,5 @@
+// Primary verification top. It creates clocks and reset, connects the
+// interface to the DUT adapter, and starts the class-based testbench.
 `ifndef _top_
 `define _top_
 
@@ -24,7 +26,6 @@ module top();
   ddr_intf inf(CLK,RESET_N);
   dut dut_inst(inf);
   tb  tb_inst(inf);
-  ddr_sdram_tb tb_v(inf);
 endmodule
 
 `endif

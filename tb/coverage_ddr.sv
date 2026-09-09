@@ -1,3 +1,5 @@
+// Functional coverage model for host address and data activity. The monitor
+// supplies sampled transaction objects through sample().
 `ifndef _cov_
 `define _cov_
 

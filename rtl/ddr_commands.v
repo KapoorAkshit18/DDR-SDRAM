@@ -1,4 +1,7 @@
-module ddr_command( 
+// Converts controller requests and timing events into DDR SDRAM command and
+// address pins. The control interface supplies operation requests while this
+// block sequences the externally visible command protocol.
+module ddr_command(
         CLK, 
         RESET_N, 
         SADDR, 

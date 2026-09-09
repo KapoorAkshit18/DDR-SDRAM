@@ -1,3 +1,5 @@
+// Shared clocking and signal interface. Modports restrict access for the DUT,
+// testbench, and driver while the tri-state SDRAM buses remain centralized.
 `ifndef _intf_
 `define _intf_
 interface ddr_intf(input bit CLK , input bit RESET_N);

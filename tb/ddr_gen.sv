@@ -1,3 +1,5 @@
+// Transaction generator. It converts the selected configuration policy into
+// randomized transaction objects sent to both the driver and scoreboard.
 `ifndef _gen_
 `define _gen_
 

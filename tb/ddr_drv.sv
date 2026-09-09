@@ -1,3 +1,5 @@
+// Driver that applies generated transactions to the virtual interface and
+// synchronizes stimulus with the DUT clocking block.
 `ifndef _drv_
 `define _drv_
 

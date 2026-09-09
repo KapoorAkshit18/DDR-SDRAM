@@ -1,3 +1,5 @@
+// Verification environment that connects generator, driver, monitor,
+// scoreboard, and coverage through mailboxes and the virtual interface.
 `ifndef _env_
 `define _env_
 

@@ -1,3 +1,5 @@
+// Randomization and transaction-policy configuration consumed by the
+// generator. Enum values select how each transaction field is produced.
 `ifndef _configurations_
 `define _configurations_
 

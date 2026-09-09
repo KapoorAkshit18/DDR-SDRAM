@@ -1,3 +1,5 @@
+// Scoreboard/reference checker for comparing expected transactions with DUT
+// responses and reporting mismatches.
 `ifndef _score_
 `define _score_
 
