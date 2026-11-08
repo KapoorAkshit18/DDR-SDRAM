@@ -18,7 +18,7 @@
 /* synopsys translate_off*/ 
  
   
-parameter inclock_period=10000; 
+parameter inclock_period=20; 
 parameter inclock_settings = "UNUSED"; 
 parameter valid_lock_cycles = 3; 
 parameter invalid_lock_cycles = 3; 
@@ -53,6 +53,12 @@ reg  cycleviolation;
 initial 
 begin 
   locked_int = 0; 
+  locked = 0;
+  clock0 = 0;
+  clock1 = 0;
+  new_clock0 = 0;
+  new_clock1 = 0;
+  prev_inclock = 0;
   inclock_edge_count = 0; 
   first_clock0_cycle = 1; 
   first_clock1_cycle = 1; 
@@ -97,22 +103,24 @@ begin
       locked = 0; 
    end 
    else if  (inclock != prev_inclock) begin // inclock edge detected 
-      if (inclock == 1) begin 
-         if (($realtime - lowcycle) != (inclock_period/2)) begin 
-            $display ($time, "Error: Duty Cycle violation"); 
-            cycleviolation = 1; 
+      if (inclock_edge_count > 0) begin
+         if (inclock == 1) begin 
+            if (($realtime - lowcycle) != (inclock_period/2)) begin 
+               $display ($time, "Error: Duty Cycle violation"); 
+               cycleviolation = 1; 
+            end 
          end 
-         highcycle = $realtime; 
-      end 
-      if (inclock == 0) begin 
-         if (($realtime - highcycle) != (inclock_period/2)) begin 
-            $display ($time, "Error: Duty Cycle violation"); 
-            cycleviolation = 1; 
+         if (inclock == 0) begin 
+            if (($realtime - highcycle) != (inclock_period/2)) begin 
+               $display ($time, "Error: Duty Cycle violation"); 
+               cycleviolation = 1; 
+            end 
          end 
-         lowcycle = $realtime; 
-      end 
+      end
+      if (inclock == 1) highcycle = $realtime; 
+      if (inclock == 0) lowcycle = $realtime; 
       inclock_edge_count = inclock_edge_count + 1;  
-      if (inclock_edge_count == valid_lock_cycles) begin 
+      if (inclock_edge_count >= valid_lock_cycles) begin 
          cycleviolation = 0; 
          locked_int = 1; 
          locked = 1; 

@@ -1,0 +1,210 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/Users/akshi/OneDrive/Documents/GitHub/DDR-SDRAM
+T_opt
+!s11d ddr_top_sv_unit C:/Users/akshi/OneDrive/Documents/GitHub/DDR-SDRAM/work 1 ddr_intf 1 C:/Users/akshi/OneDrive/Documents/GitHub/DDR-SDRAM/work 
+!s110 1794061236
+VSN5ZIT]ZII`1GI>3k<[>T3
+04 3 4 work top fast 0
+=1-48e7dad10595-6aef33b3-1b2-815c
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2024.1;79
+Yddr_intf
+Z4 2tb/ddr_intf.sv|rtl/ddr_sdram.v|tb/ddr_dut.sv|tb/ddr_top.sv
+Z5 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z6 !s110 1794061232
+!i10b 1
+!s100 :DXQ0RHQNdH9Mjj:5d48C1
+IHamU=;m`0T_d79M_Q>zeF2
+S1
+R2
+Z7 w1788951600
+8tb/ddr_intf.sv
+Ftb/ddr_intf.sv
+!i122 4
+L0 5 0
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2024.1;79
+r1
+!s85 0
+31
+Z10 !s108 1794061232.000000
+Z11 !s107 tb/ddr_tb.sv|tb/ddr_env.sv|tb/ddr_score.sv|tb/ddr_monitor.sv|tb/coverage_ddr.sv|tb/ddr_drv.sv|tb/ddr_gen.sv|tb/configurations.sv|tb/ddr_base.sv|rtl/ddr_data_path.v|rtl/ddr_commands.v|rtl/ddr_controle_interface.v|rtl/altclklock.v|rtl/pll1.v|rtl/params.v|tb/ddr_top.sv|tb/ddr_dut.sv|rtl/ddr_sdram.v|tb/ddr_intf.sv|
+Z12 !s90 -work|work|-sv|-f|filelist.f|
+!i113 0
+Z13 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 !s92 -work work -sv +incdir+rtl +incdir+tb -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vddr_sdram
+R4
+R5
+R6
+!i10b 1
+!s100 ERj<T9=4Xf2SPUQlc[Hjz1
+IBgoal_LFggM7Ro^eEEdBf3
+S1
+R2
+w1794061226
+8rtl/ddr_sdram.v
+Frtl/ddr_sdram.v
+Frtl/params.v
+Frtl/pll1.v
+Frtl/altclklock.v
+Frtl/ddr_controle_interface.v
+Frtl/ddr_commands.v
+Frtl/ddr_data_path.v
+!i122 4
+L0 4 524
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R3
+Xddr_top_sv_unit
+R4
+!s115 ddr_intf
+R5
+R6
+Vb7AS^:MK<ROBFNFo4>PnH1
+r1
+!s85 0
+!i10b 1
+!s100 g3@KR;K@<M?3Ye`9:>e^h1
+Ib7AS^:MK<ROBFNFo4>PnH1
+!i103 1
+S1
+R2
+w1794061129
+Z15 8tb/ddr_top.sv
+Z16 Ftb/ddr_top.sv
+Ftb/ddr_base.sv
+Ftb/configurations.sv
+Ftb/ddr_gen.sv
+Ftb/ddr_drv.sv
+Ftb/coverage_ddr.sv
+Ftb/ddr_monitor.sv
+Ftb/ddr_score.sv
+Ftb/ddr_env.sv
+Z17 Ftb/ddr_tb.sv
+!i122 4
+L0 20 0
+R9
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R3
+vdut
+R4
+R5
+R6
+!i10b 1
+!s100 jd48Kmcz[9JzMMD@ej9_?2
+INYDBk<79nfS;`S9FNZ]iT0
+S1
+R2
+R7
+8tb/ddr_dut.sv
+Ftb/ddr_dut.sv
+!i122 4
+L0 6 31
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R3
+vtb
+R4
+R5
+Z18 DXx4 work 15 ddr_top_sv_unit 0 22 b7AS^:MK<ROBFNFo4>PnH1
+R6
+R8
+r1
+!s85 0
+!i10b 1
+!s100 TM>?c3`LQ=]J8X<LmDgN@3
+Im@<XVRoWZPZ[m8?HH3zYM1
+Z19 !s105 ddr_top_sv_unit
+S1
+R2
+R7
+8tb/ddr_tb.sv
+R17
+!i122 4
+L0 14 37
+R9
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R3
+vtop
+R4
+R5
+R18
+R6
+R8
+r1
+!s85 0
+!i10b 1
+!s100 6^^L;DiJdf7cYMnhiE5081
+I:aC57ORVUU2dGe[E`B`z_1
+R19
+S1
+R2
+w1794061116
+R15
+R16
+!i122 4
+L0 16 15
+R9
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+R3

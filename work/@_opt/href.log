@@ -1,0 +1,38 @@
+BEGIN 3:ddr_intf:fast__1:work
+    CKE :  1:ddr_top_sv_unit:fast:work
+    RAS_N :  1:ddr_top_sv_unit:fast:work
+    BA :  1:ddr_top_sv_unit:fast:work
+    DATAIN :  1:ddr_top_sv_unit:fast:work
+    CMDACK :  1:ddr_top_sv_unit:fast:work
+    SA :  1:ddr_top_sv_unit:fast:work
+    DQM :  1:ddr_top_sv_unit:fast:work
+    WE_N :  1:ddr_top_sv_unit:fast:work
+    DM :  1:ddr_top_sv_unit:fast:work
+    CMD :  1:ddr_top_sv_unit:fast:work
+    DQS_drv :  1:ddr_top_sv_unit:fast:work
+    CAS_N :  1:ddr_top_sv_unit:fast:work
+    DQ_drv :  1:ddr_top_sv_unit:fast:work
+    CLK :  1:ddr_top_sv_unit:fast:work
+    ADDR :  1:ddr_top_sv_unit:fast:work
+END 
+BEGIN 3:ddr_intf:fast__2:work
+    DATAIN :  1:dut:fast:work
+    CMDACK :  1:dut:fast:work
+    BA :  1:dut:fast:work
+    CAS_N :  1:dut:fast:work
+    DQS :  1:dut:fast:work
+    CLK :  1:dut:fast:work
+    DX :  1:dut:fast:work
+    CS_N :  1:dut:fast:work
+    WE_N :  1:dut:fast:work
+    DATAOUT :  1:dut:fast:work
+    RESET_N :  1:dut:fast:work
+    DM :  1:dut:fast:work
+    CKE :  1:dut:fast:work
+    DQ :  1:dut:fast:work
+    CMD :  1:dut:fast:work
+    ADDR :  1:dut:fast:work
+    SA :  1:dut:fast:work
+    RAS_N :  1:dut:fast:work
+    DQM :  1:dut:fast:work
+END 

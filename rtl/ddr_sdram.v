@@ -222,8 +222,18 @@ ddr_data_path data_path4(
  
  
 // register the SDRAM i/o for higher performance. 
-always @(posedge CLK100) 
+always @(posedge CLK100 or negedge RESET_N) 
 begin 
+        if (RESET_N == 0) begin 
+                SA      <= 0; 
+                BA      <= 0; 
+                CS_N    <= 2'b11; 
+                CKE     <= 0; 
+                RAS_N   <= 1; 
+                CAS_N   <= 1; 
+                WE_N    <= 1; 
+        end 
+        else begin 
                 SA      <= ISA; 
                 BA      <= IBA; 
                 CS_N    <= ICS_N; 
@@ -231,6 +241,7 @@ begin
                 RAS_N   <= IRAS_N; 
                 CAS_N   <= ICAS_N; 
                 WE_N    <= IWE_N; 
+        end 
 end 
  
 // capture the read data 

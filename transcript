@@ -1,0 +1,64 @@
+# vsim -c -lib work top -do "vcd file ddr.vcd; vcd add -r /*; run 100 us; vcd flush; quit -f" -l transcript 
+# Start time: 19:51:31 on Nov 07,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.ddr_top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ddr_intf(fast)
+# vcd file ddr.vcd
+#  vcd add -r /*
+#  run 100 us
+#                    0ENVIRONMENT :: Run Phase
+#                    0GENERATOR :: Run Phase
+# Randomized Configurations='{cmd1:READA, ADDR:random, DATAIN:random1, DM:random_dm, DQ:random_dq, DQS:random_dqs, CMD:random_cmd, num_txns:1, TXDATAIN:0, TXADDR:0, TXDM:0, TXDQ:0, TXDQS:0, TXCMD:0, user_DATAIN:x, user_ADDR:x, user_DM:x, user_DQ:x, user_DQS:x, user_CMD:x}
+#                    0DRIVER :: Run Phase
+#                    0datain=                              112818957,addr=1389860,dm=    0,dq=18446744072644812417,dqs=  9,cmd=3
+#                    0MONITOR :: Run Phase
+#                    0SCOREBOARD :: Run Phase
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+# entering into coverage
+#                   10DRIVER :: Run Phase
+#                   10datain=                              114806029,addr=2070925,dm=    0,dq=18446744072413676645,dqs= 18,cmd=1
+#                   20DRIVER :: Run Phase
+#                   20datain=                             2097015289,addr=2355574,dm=    0,dq=           512609597,dqs=237,cmd=4
+#                   30DRIVER :: Run Phase
+#                   30datain=340282366920938463463374607430624375415,addr=3613894,dm=    0,dq=18446744073222456517,dqs=170,cmd=5
+#                   40DRIVER :: Run Phase
+#                   40datain=340282366920938463463374607431566916328,addr=3331602,dm=    0,dq=          1206705039,dqs=242,cmd=6
+#                   50DRIVER :: Run Phase
+#                   50datain=340282366920938463463374607430470542949,addr= 675525,dm=    0,dq=           777537884,dqs=189,cmd=5
+#                   60DRIVER :: Run Phase
+#                   60datain=                             1433945514,addr=3105379,dm=    0,dq=            91457290,dqs=128,cmd=0
+#                   70DRIVER :: Run Phase
+#                   70datain=340282366920938463463374607430319593043,addr= 838813,dm=    0,dq=18446744072822472342,dqs= 19,cmd=5
+#                   80DRIVER :: Run Phase
+#                   80datain=                              251652381,addr=2088299,dm=    0,dq=18446744073351342805,dqs=  2,cmd=6
+#                   90DRIVER :: Run Phase
+#                   90datain=340282366920938463463374607430127275068,addr= 357071,dm=    0,dq=           293882147,dqs= 10,cmd=2
+#                  100DRIVER :: Run Phase
+#  vcd flush
+#  quit -f
+# End time: 19:51:32 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

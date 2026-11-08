@@ -19,9 +19,10 @@ module top();
   initial
   CLK = 1'b0;
   always #10 CLK = ~CLK;
-  initial 
-  RESET_N = 1'b0;
-  always #10 RESET_N = 1'b1;
+  initial begin
+    RESET_N = 1'b0;
+    #15 RESET_N = 1'b1;
+  end
   
   ddr_intf inf(CLK,RESET_N);
   dut dut_inst(inf);

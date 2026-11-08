@@ -53,23 +53,23 @@ module pll1 (
 	wire  clock1 = sub_wire1; 
 	wire  locked = sub_wire2; 
  
-	altclklock	altclklock_component ( 
-				.inclock (inclock), 
-				.clock0 (sub_wire0), 
-				.clock1 (sub_wire1), 
-				.locked (sub_wire2)); 
-	defparam 
-		altclklock_component.inclock_period = 10000, 
-		altclklock_component.clock0_boost = 100, 
-		altclklock_component.clock1_boost = 200, 
-		altclklock_component.operation_mode = "NORMAL", 
-		altclklock_component.valid_lock_cycles = 5, 
-		altclklock_component.invalid_lock_cycles = 5, 
-		altclklock_component.valid_lock_multiplier = 5, 
-		altclklock_component.invalid_lock_multiplier = 5, 
-		altclklock_component.clock0_divide = 1, 
-		altclklock_component.clock1_divide = 1, 
-		altclklock_component.outclock_phase_shift = 0; 
+	altclklock #(
+		.inclock_period(20),
+		.clock0_boost(1),
+		.clock1_boost(2),
+		.operation_mode("NORMAL"),
+		.valid_lock_cycles(3),
+		.invalid_lock_cycles(3),
+		.valid_lock_multiplier(1),
+		.invalid_lock_multiplier(1),
+		.clock0_divide(1),
+		.clock1_divide(1),
+		.outclock_phase_shift(0)
+	) altclklock_component ( 
+		.inclock (inclock), 
+		.clock0 (sub_wire0), 
+		.clock1 (sub_wire1), 
+		.locked (sub_wire2)); 
  
 /* synopsys translate_on */ 
 endmodule 

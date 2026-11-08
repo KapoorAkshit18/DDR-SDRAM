@@ -24,9 +24,8 @@ endfunction
 task ddr_moni :: mon_run();
   begin
     ddr_base base;
+    $display($time,"MONITOR :: Run Phase");
     while(1)begin
-      $display($time,"Data Matched :: Run Phase");
-      
        @(posedge inf.cb or negedge inf.cb);
        if(inf.CMD == 3'bxxx) begin
          base = new();

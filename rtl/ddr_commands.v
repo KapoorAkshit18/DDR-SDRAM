@@ -311,7 +311,7 @@ end
 // This always block generates the address, cs, cke, and command signals(ras,cas,wen) 
 //  
  
-        always @(posedge CLK ) begin 
+        always @(posedge CLK or negedge RESET_N) begin 
                 if (RESET_N==0) begin 
                         SA    <= 0; 
                         BA    <= 0; 
